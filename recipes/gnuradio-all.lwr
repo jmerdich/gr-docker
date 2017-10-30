@@ -1,0 +1,12 @@
+# gnuradio prefix that doesn't break wxwidgets
+
+inherit: prefix
+depends:
+        - gnuradio
+config:
+  packages:
+    doxygen:
+      optional: True
+    gqrx:
+      forcebuild: True
+
